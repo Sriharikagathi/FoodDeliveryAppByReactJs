@@ -5,13 +5,6 @@ import { StoreContext } from "../../context/StoreContext";
 import axios from "axios";
 const FoodDisplay = ({ category }) => {
   const { food_list } = useContext(StoreContext);
-  const [foodList, setFoodList] = useState([]);
-  useEffect(() => {
-    getFoodItems().then((data) => {
-      console.log(data);
-      setFoodList(data);
-    });
-  }, []);
   return (
     <div className="food-display" id="food-display">
       <h2>Top Dishes near you</h2>
