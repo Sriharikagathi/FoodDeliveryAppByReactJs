@@ -1,6 +1,5 @@
 import { useContext, useEffect, useState } from "react";
 import "./FoodDisplay.css";
-import { getFoodItems } from "./Helper/apiCall";
 import FoodItem from "../FoodItem/FoodItem";
 import { StoreContext } from "../../context/StoreContext";
 import axios from "axios";
